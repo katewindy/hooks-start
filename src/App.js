@@ -35,11 +35,6 @@ function App() {
 	const changeInputValue = e => setInput(e.target.value);
 	const filteredItems = [...users.filter(item => item.name.toLowerCase().includes(input))];
 
-	const clearHandler = () => {
-		setInput("");
-		inputRef.current.focus();
-	};
-
 	return (
 		<div className="counter-container">
 			<h1>Counter</h1>
